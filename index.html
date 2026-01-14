@@ -7,51 +7,77 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-    <img src="img/halie-west-25xggax4bSA-unsplash.jpg">
-    <img src="img/odin-lined.png">
-    </div>
-    <div>
+    <div class="container">
+        <div class="img-container">
+            <div class="logo">
+            <img src="img/odin-lined.png">
+            <h1>ODIN</h1>
+            </div>
+            <img src="img/halie-west-25xggax4bSA-unsplash.jpg">
+        </div>
+    <div class="content">
+        <div class="text-content">
         <p>This is not a real online service! You know you need something
-            like this in your life to help ypu realize your deepest dreams.
-            Sign up <em>now</em> to get started.
-        </p>
+            like this in your life to help you realize your deepest dreams.</p>
+            <p>Sign up <em>now</em> to get started.</p>
         <p>You <em>know</em> you want to.</p>
-    </div>
+        </div>
     <form>
-        <fieldset>
-            <legend>Let's do this!</legend>
-            <p>
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name" name="first-name">
-            </p>
-            <p>
-                <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" name="last-name">
-            </p>
-            <p>
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email">
-            </p>
-            <p>
-                <label for="phone-num">PHONE NUMBER</label>
-                <input type="number" id="phone-num" name="phone-num">         
-            </p>
-            <p>
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password">
-            </p>
-            <p>
-                <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="password" id="confirm-password" name="confirm-password">
-            </p>
+        <div class="input-container">
+            <fieldset>
+                <legend>Let's do this!</legend>
+                <div>
+                <p>
+                    <label for="first-name">FIRST NAME</label>
+                </p>
+                <p>
+                    <input type="text" id="first-name" name="first-name" required>
+                </p>
+                <p>
+                    <label for="last-name">LAST NAME</label>
+                </p>
+                <p>
+                    <input type="text" id="last-name" name="last-name" required>
+                </p>
+                <p>
+                    <label for="email">EMAIL</label>
+                </p>
+                <p>
+                    <input type="email" id="email" name="email">
+                </p>
+                </div>
+                <div>
+                <p>
+                    <label for="phone-num">PHONE NUMBER</label>
+                </p>
+                <p>
+                    <input type="tel" id="phone-num" name="phone-num" pattern="^09\d{9}$" required>         
+                </p>
+                <p>
+                    <label for="password">PASSWORD</label>
+                </p>
+                <p>
+                    <input type="password" id="password" name="password" minlength="8" required>
+                </p>
+                <p>
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                </p>
+                <p>
+                    <input type="password" id="confirm-password" name="confirm-password" minlength="8" required>
+                </p>
+                </div>
+            </fieldset>
+        </div>
+        <div class="button-container">
             <p>
                 <button type="submit">Create Account</button>
             </p>
             <p>
                 <p>Already have an account? <a href="#">Log in</a></p>
             </p>
-        </fieldset>
+        </div>
     </form>
+    </div>
+    </div>
 </body>
 </html>
